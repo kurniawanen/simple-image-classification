@@ -1,0 +1,8 @@
+1. Semua file foto dalam folder diubah menjadi array [jumlahfile][3136] setelah melalui proses konversi ke grayscale, resizing, dan normalisasi
+2. Definisi model:
+y = softmax( weight*input + bias )
+softmax digunakan agar vector yang dihasilkan adalah vector probabilitas tiap label dengan total semua nilai pada vector = 1 (sama dengan bentuk label data train)
+3. Cost function yang digunakan adalah cross entropy (with logits)
+4. Optimization algorithm yang digunakan adalah gradient descent dengan learning rate 0.5
+5. Backpropagation dijalankan secara otomatis oleh library tensorflow
+6. Training dijalankan dalam beberapa epoch, setiap epoch menjalankan training untuk tiap batch berisi 5 file.
